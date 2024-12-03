@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мир Кофе | О кофе</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #4e342e, #2d2d2d);
+      color: #fff;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fdd835;
+      font-weight: bold;
+      padding: 10px 15px;
+      border: 2px solid transparent;
+      transition: all 0.3s ease-in-out;
+    }
+
+    nav a:hover,
+    nav a.active {
+      border: 2px solid #fdd835;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    header {
+      background: url('images/coffee-beans.jpg') center/cover no-repeat;
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fdd835;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    main {
+      padding: 60px 20px;
+    }
+
+    section {
+      margin: 20px 0;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #fdd835;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    section img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2d2d2d;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #fdd835;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Навигация -->
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="about.html" class="active">О кофе</a>
+    <a href="menu.html">Меню</a>
+    <a href="form.html">Заказ</a>
+    <a href="repeat.html">Кофейные напитки</a>
+  </nav>
+
+  <!-- Шапка -->
+  <header>
+    <h1>О кофе</h1>
+  </header>
+
+  <!-- Основной контент -->
+  <main>
+    <section>
+      <h2>История кофе</h2>
+      <p>Кофе — это один из самых популярных напитков в мире, история которого насчитывает несколько сотен лет. Согласно легенде, кофе был открыт в Эфиопии, когда пастух заметил, что его козы становятся бодрее после поедания ягод с одного кустарника.</p>
+      <img src="images/history.jpg" alt="История кофе">
+    </section>
+    <section>
+      <h2>Сорта кофе</h2>
+      <p>Существует множество сортов кофе, однако два из них являются наиболее популярными: арабика и робуста. Арабика имеет мягкий вкус с фруктовыми нотками, в то время как робуста отличается более крепким и насыщенным вкусом.</p>
+      <img src="images/coffee-sorts.jpg" alt="Сорта кофе">
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer>
+    <p>&copy; 2024 Мир Кофе | <a href="mailto:info@coffee.com">Связаться с нами</a></p>
+  </footer>
+</body>
+</html>
